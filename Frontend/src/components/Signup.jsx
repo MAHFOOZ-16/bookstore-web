@@ -46,13 +46,13 @@ function Signup() {
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
-                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:text-black"
               >
                 ✕
               </Link>
 
-              <h3 className="font-bold text-lg">Signup</h3>
-              <div className="mt-4 space-y-2">
+              <h3 className="font-bold text-lg dark:text-black">Signup</h3>
+              <div className="mt-4 space-y-2 dark:text-black">
                 <span>Name</span>
                 <br />
                 <input
@@ -69,7 +69,7 @@ function Signup() {
                 )}
               </div>
               {/* Email */}
-              <div className="mt-4 space-y-2">
+              <div className="mt-4 space-y-2 dark:text-black">
                 <span>Email</span>
                 <br />
                 <input
@@ -86,7 +86,7 @@ function Signup() {
                 )}
               </div>
               {/* Password */}
-              <div className="mt-4 space-y-2">
+              <div className="mt-4 space-y-2 dark:text-black">
                 <span>Password</span>
                 <br />
                 <input
@@ -107,7 +107,7 @@ function Signup() {
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                   Signup
                 </button>
-                <p className="text-xl">
+                <p className="text-xl dark:text-black">
                   Have account?{" "}
                   <button
                     className="underline text-blue-500 cursor-pointer"

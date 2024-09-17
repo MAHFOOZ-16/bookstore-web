@@ -1,4 +1,5 @@
 import React from "react";
+import toast from "react-hot-toast";
 
 function Banner() {
   return (
@@ -18,7 +19,7 @@ function Banner() {
               vi något för dig!
             </p>
             <div>
-              <label className="input input-bordered flex items-center gap-2">
+              <label className="input input-bordered flex items-center gap-2 dark: text-black">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
@@ -30,7 +31,7 @@ function Banner() {
                 </svg>
                 <input type="text" className="grow" placeholder="Email" />
               </label>
-              <button className="btn mt-6 btn-secondary ">Secondary</button>
+              <button className="btn mt-6 btn-secondary ">Register</button>
             </div>
           </div>
         </div>
