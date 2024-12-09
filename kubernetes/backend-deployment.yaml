@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bookstore-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bookstore-backend
+  template:
+    metadata:
+      labels:
+        app: bookstore-backend
+    spec:
+      containers:
+        - name: backend
+          image: mahfoozkhan03/bookstore-backend:latest
+          ports:
+            - containerPort: 4001
+          env:
+          - name: MongoDBURI
+            value: "mongodb://mongo:27017/bookStore"

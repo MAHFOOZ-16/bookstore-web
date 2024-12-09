@@ -1,5 +1,9 @@
 # React + Vite
 
+To run Front end use command npm run dev
+To run backend use command npm start
+Make sure the port are free on your machine
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

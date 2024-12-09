@@ -25,13 +25,15 @@ function Course() {
             <span className="text-pink-500"> Here! :)</span>
           </h1>
           <p className="mt-12">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
-            assumenda? Repellendus, iste corrupti? Tempore laudantium
-            repellendus accusamus accusantium sed architecto odio, nisi expedita
-            quas quidem nesciunt debitis dolore non aspernatur praesentium
-            assumenda sint quibusdam, perspiciatis, explicabo sequi fugiat amet
-            animi eos aut. Nobis quisquam reiciendis sunt quis sed magnam
-            consequatur!
+            Delve into the boundless realms of imagination with our exclusive
+            collection of books! From tales that transport you to magical worlds
+            to stories that ignite your curiosity, every page is a doorway to
+            adventure. Let your mind wander through epic sagas, uncover hidden
+            mysteries, and bask in the brilliance of timeless classics. Whether
+            you are seeking inspiration, thrills, or a journey beyond reality,
+            these books are your perfect companions. Unlock the power of words
+            and immerse yourself in stories that stay with you forever. Start
+            your next great adventure today!
           </p>
           <Link to="/">
             <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">

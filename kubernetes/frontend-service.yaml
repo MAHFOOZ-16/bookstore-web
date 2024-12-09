@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bookstore-frontend
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 5173 # Ensure this matches the port your frontend is listening on
+  selector:
+    app: bookstore-frontend # Ensure this matches the labels of your frontend pods

@@ -8,7 +8,7 @@ import axios from "axios";
 
 import Cards from "./Cards";
 
-function Freebook({item}) {
+function Freebook({ item }) {
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
@@ -31,7 +31,7 @@ function Freebook({item}) {
   }, []);
 
   var settings = {
-    dots: true,  
+    dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
@@ -68,11 +68,11 @@ function Freebook({item}) {
     <>
       <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
         <div>
-          <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
+          <h1 className="font-semibold text-xl pb-2">Exclusive Free Courses</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium veritatis alias pariatur ad dolor repudiandae eligendi
-            corporis nulla non suscipit, iure neque earum?
+            Unlock the joy of reading with our free courses! Explore topics
+            ranging from creative writing to book club discussions, designed to
+            ignite your passion for literature and learning.
           </p>
         </div>
 
@@ -81,7 +81,6 @@ function Freebook({item}) {
             {book.map((item) => (
               <Cards item={item} key={item.id} />
             ))}
-            
           </Slider>
         </div>
       </div>

@@ -1,0 +1,35 @@
+services:
+  backend:
+    build: ./Backend
+    ports:
+      - "4001:4001"
+    networks:
+      - book
+    env_file:
+      - Backend/.env
+    environment:
+      - MongoDBURI=mongodb://mongo:27017/bookStore
+
+  frontend:
+    build: ./Frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - book
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - book-data:/data/db
+    networks:
+      - book
+
+networks:
+  book:
+    driver: bridge
+
+volumes:
+  book-data:
+    driver: local
