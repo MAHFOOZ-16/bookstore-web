@@ -20,7 +20,7 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Logged in Successfully");
+          toast.success("Login Successfully");
           document.getElementById("my_modal_3").close();
           setTimeout(() => {
             window.location.reload();
